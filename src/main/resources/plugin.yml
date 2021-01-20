@@ -1,0 +1,6 @@
+name: DeathMessageCount
+version: ${project.version}
+main: me.nate.deathmessagecount.DeathMessageCount
+api-version: 1.16
+authors: [ Gk01234 ]
+description: Adds a death counter to player death messages
