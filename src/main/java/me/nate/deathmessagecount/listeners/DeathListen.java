@@ -18,9 +18,9 @@ public class DeathListen implements Listener {
     public void deathEvent(PlayerDeathEvent d) {
         Player p = d.getEntity();
         int c = p.getStatistic(Statistic.DEATHS);
-        String cs = String.valueOf(c);
+        String cs = String.valueOf(c+1);
         String m = d.getDeathMessage();
-        String n = "; their #"+cs+"death";
+        String n = ", death #"+cs+" for them";
         d.setDeathMessage(m+n);
     }
 }
