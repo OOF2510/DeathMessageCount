@@ -1,6 +1,11 @@
 name: DeathMessageCount
-version: 1.0.1
+version: 2.0
 main: me.nate.deathmessagecount.DeathMessageCount
 api-version: 1.16
 authors: [ Gk01234 ]
 description: Adds a death counter to player death messages
+commands:
+  deaths:
+    description: Tells you how many deaths you have
+    usage: /deaths or /d
+    aliases: d
