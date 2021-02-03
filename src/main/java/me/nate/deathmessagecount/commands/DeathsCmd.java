@@ -12,7 +12,7 @@ public class DeathsCmd implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         Player p = (Player) sender;
         int c = p.getStatistic(Statistic.DEATHS);
-        String cs = String.valueOf(c+1);
+        String cs = String.valueOf(c);
         String n = "you have "+cs+" deaths";
         p.sendMessage(n);
 
