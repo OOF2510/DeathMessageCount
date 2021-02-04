@@ -14,10 +14,12 @@ public class DeathsCmd implements CommandExecutor {
         if(args.length <= 1) {
             String ps = args[0];
             Player p = Bukkit.getServer().getPlayer(ps);
+            String pn = p.getName();
+            Player e = (Player) sender;
             int c = p.getStatistic(Statistic.DEATHS);
             String cs = String.valueOf(c);
-            String n = "you have "+cs+" deaths";
-            p.sendMessage(n);
+            String n = pn+" has "+cs+" deaths";
+            e.sendMessage(n);
         } else {
             Player p = (Player) sender;
             int c = p.getStatistic(Statistic.DEATHS);
