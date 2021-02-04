@@ -24,7 +24,7 @@ public class DeathsCmd implements CommandExecutor {
             Player p = (Player) sender;
             int c = p.getStatistic(Statistic.DEATHS);
             String cs = String.valueOf(c);
-            String n = "you have "+cs+" deaths";
+            String n = "You have "+cs+" deaths";
             p.sendMessage(n);
         }
 
