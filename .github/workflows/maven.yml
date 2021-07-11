@@ -23,3 +23,8 @@ jobs:
         distribution: 'adopt'
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    - name: Archive build
+      uses: actions/upload-artifact@v2
+      with:
+          name: DeathMessageCount.jar
+          path: /home/runner/work/DeathMessageCount/DeathMessageCount/target/DeathMessageCount-*.jar
